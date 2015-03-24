@@ -20,6 +20,7 @@ module Delayed
         attr_accessor :locked_at
         attr_accessor :locked_by
         attr_accessor :failed_at
+        attr_accessor :last_error
 
         include Delayed::Backend::Base
         extend Delayed::Backend::Sqs::Worker
